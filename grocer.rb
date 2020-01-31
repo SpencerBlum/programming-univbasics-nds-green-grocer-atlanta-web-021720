@@ -116,9 +116,9 @@ def checkout(cart, coupons)
 
   final_cart = apply_clearance(couponed_cart)
 total = 0
-  i = 0 
+  i = 0
 
-  while i < final_cart.length do 
+  while i < final_cart.length do
     total += final_cart[i][:cost]
     i += 1
   end
@@ -127,9 +127,9 @@ total = 0
     total = (total * .90).round(2)
   end
 
-  
 
-  
+
+
   # Consult README for inputs and outputs
   #
   # This method should call
