@@ -99,7 +99,7 @@ def apply_clearance(cart)
   while i < cart.length do
     if cart[i][:clearance] = true
       new_price = cart[i][:price] * 0.80
-      new_price_rounded = new_price.round
+      new_price_rounded = new_price.round(2)
       cart[i][:price] = new_price_rounded
     end
     i += 1
