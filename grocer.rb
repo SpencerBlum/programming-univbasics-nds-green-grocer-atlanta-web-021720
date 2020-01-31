@@ -124,14 +124,12 @@ total = 0
   end
 
   if total >= 100
-    total = (total * .90).round(2)
+    new_total = (total * .90).round(2)
+    return new_total
+  elsif total < 100
+
+    return total
   end
-
-  total
-
-
-
-
 
 
   # Consult README for inputs and outputs
